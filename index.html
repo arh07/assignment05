@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Maker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="text-center">
+            <h1 class="fw-bolder">Money <span class="text-success">Maker</span></h1>
+        </div>
+        <!-- image Part start -->
+        <section class="container d-flex mt-5">
+            <div>
+                <img class="images" src="images/istockphoto-1034298298-2048x2048.jpg" alt="">
+            </div>
+
+
+            <!-- income and Expense Start -->
+            <div class="income-calculation d-flex justify-content-center">
+                <div class="mt-5">
+                    <div>
+                        <h3 class="mx-5"><span class="text-success fs-1">Income</span></h3>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <p class="mx-1"><span class="text-primary fs-3">Income:</span></p>
+                            </div>
+                            <div class="mb-2">
+                                <input id="total-income" class="bg-dark text-warning mx-2" type="text" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h3 class="mx-5"><span class="text-success fs-1">Expenses</span></h3>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <p class="mx-3"><span class="text-primary fs-2">Food:</span>
+                                </p>
+                            </div>
+                            <div class="mb-2">
+                                <input id="food-cost" class="bg-dark text-warning mx-4" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <p class="mx-3"><span class="text-primary fs-2">Rent:</span></p>
+                            </div>
+                            <div class="mb-2">
+                                <input id="house-rent" class="bg-dark text-warning mx-4" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <p class="mx-1"><span class="text-primary fs-2">Clothes:</span></p>
+                            </div>
+                            <div class="mb-2">
+                                <input id="clothes-item" class="bg-dark text-warning mx-1" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <!-- income and Expense End -->
+
+
+                        <!-- calculate Button Start -->
+
+                        <div>
+                            <button id="calculation" type="button"
+                                class="btn btn-success button-type fs-5 ">Calculate</button>
+                        </div>
+                        <!-- calculate Button End -->
+                        <!-- error handling Message start -->
+
+                        <div>
+                            <p id="error-handling" class="errorhandling"> 'ooops' Error: please give a positive number
+                            </p>
+                        </div>
+
+                        <div>
+                            <p id="error-money" class="errorhandling"> 'ooops' Error: you haven't sufficient
+                                balance
+                            </p>
+                        </div>
+
+                        <!-- error handling Message start -->
+
+                        <div class="mt-3">
+                            <div>
+                                <p><span class="text-primary fs-5">Total Expenses:</span> <span id="total-expenses"
+                                        class="fs-5">5500</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p> <span class="text-primary fs-5">Balance:</span> <span id="total-balance"
+                                        class="fs-5">4500</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <!-- save Button start  -->
+                            <div>
+                                <p>
+                                    <span class="text-primary fs-5">Save:</span> <span><input id="save-money"
+                                            type="text"></span> <span> % </span>
+                                    <button id="savings-btn" type="button" class="btn btn-success fs-5">save</button>
+                                </p>
+                            </div>
+                            <!-- save Button end  -->
+
+                            <div>
+                                <p id="error-moneysave" class="errorhandling"> 'ooops' Error: you haven't sufficient
+                                    balance
+                                </p>
+                            </div>
+
+                            <div>
+                                <p><span class="text-primary fs-5">Saving Amount:</span> <span id="saving-amount"
+                                        class="fs-5">2000</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p><span class="text-primary fs-5">Remaining Balance:</span> <span
+                                        id="remaining-balance" class="fs-5">2500</span>
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="money-maker.js"></script>
+
+</body>
+
+</html>

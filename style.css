@@ -1,0 +1,34 @@
+.images {
+    width: 705px;
+    height: 815px;
+    margin-right: 73px;
+
+}
+
+
+
+.income-calculation {
+    width: 542px;
+    height: 815px;
+    left: 843px;
+    top: 134px;
+
+    background: #f3e3f7;
+}
+
+.button-type {
+    margin-top: 20px;
+    margin-left: 120px;
+
+}
+
+.errorhandling {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    background: #e95b63;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 5px 20px;
+    display: none;
+}
